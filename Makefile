@@ -37,7 +37,7 @@ $(OBJ): $(SRC) $(HDR)
 #	Rebuild the static target library.
 #
 $(LIB_TARGET): $(OBJ)
-	ar r $(LIB_TARGET) $(OBJ)
+	$(AR) r $(LIB_TARGET) $(OBJ)
 
 #
 #	Rebuild the shared object target library.
